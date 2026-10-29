@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bus and Train Ticket Booking</title>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #fff8e8;
+            margin: 20px;
+        }
+        h1 {
+            color: #8a4b08;
+            text-align: center;
+        }
+        h2 {
+            color: #a35a10;
+        }
+        .booking {
+            background-color: white;
+            border: 1px solid #e5c99d;
+            padding: 15px;
+            margin: 15px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select {
+            padding: 7px;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        th, td {
+            border: 1px solid #b9a17f;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f3dfbd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bus and Train Ticket Booking</h1>
+    <p style="text-align: center;">Plan your journey with us.</p>
+
+    <div class="booking">
+        <h2>Search Your Journey</h2>
+        <form>
+            <label>From:</label>
+            <input type="text" name="from" placeholder="Enter starting city">
+
+            <label>To:</label>
+            <input type="text" name="to" placeholder="Enter destination city">
+
+            <label>Journey Date:</label>
+            <input type="date" name="journeydate">
+
+            <label>Passengers:</label>
+            <select name="passengers">
+                <option>1 Passenger</option>
+                <option>2 Passengers</option>
+                <option>3 Passengers</option>
+                <option>4 Passengers</option>
+            </select>
+
+            <p><input type="submit" value="Search Services"></p>
+        </form>
+    </div>
+
+    <div class="booking">
+        <h2>Available Services</h2>
+        <table>
+            <tr>
+                <th>Service</th>
+                <th>Departure</th>
+                <th>Fare</th>
+            </tr>
+            <tr>
+                <td>Express Bus</td>
+                <td>8:00 AM</td>
+                <td>₹350</td>
+            </tr>
+            <tr>
+                <td>Superfast Train</td>
+                <td>9:30 AM</td>
+                <td>₹500</td>
+            </tr>
+            <tr>
+                <td>City Bus</td>
+                <td>11:00 AM</td>
+                <td>₹150</td>
+            </tr>
+        </table>
+        <p>Note: This is a sample page. It does not make real bookings.</p>
+    </div>
+</body>
+</html>
